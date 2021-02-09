@@ -1,0 +1,237 @@
+
+body{
+    background: white;
+}
+.header{
+    margin:0;
+    background:white;
+    font-size: 13px !important;
+    height: 44px;
+    /*margin-bottom: 2px;*/
+    padding-left: 50px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.header .logo{
+    
+    background: white;
+    width:110px;
+    text-align: center;
+    height:100%;
+    float:left;
+    margin-left:20px;
+}
+.header .logo img{
+    text-align: center;
+    margin-top:3px;
+    width:100%;
+}
+.header .border-mic{
+    width:180px;
+    height:100%;
+    float:left;
+    background: white;
+}
+.header .border-mic .border{
+    border-left: 2px solid #000;
+    height: 24px;
+    content: " ";
+    margin-left: 30px;
+    position: absolute;
+    top: 13px;
+}
+.header .border-mic .mic{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 13px;
+    margin-left: 60px;
+}
+.header .options{
+    width:650px;
+    height:100%;
+    background: white;
+    text-align: center;
+    float:left;
+}
+.header .options .button{
+    font-size: 13px;
+    font-weight: 400;
+    float:left;
+    width:80px;
+    background: white;
+    margin-top:8px;
+}
+.header .options .button .buy{
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 6px 8px 6px 8px;
+}
+
+.header .all-products{
+    font-size: 13px;
+    font-weight: 400;
+    width:170px;
+    height:100%;
+    float:left;
+    background: white;
+}
+
+.header .all-products .button{
+    margin-top:8px;
+}
+.header .search-icon{
+    width:25px;
+    text-align: center;
+    height:100%;
+    float:left;
+}
+.header .search-icon img{
+    width:100%;
+    margin-top:5px;
+}
+.header .login{
+    float:left;
+}
+.header .login .button{
+    float:left;
+    font-size: 15px;
+    font-weight: 300;
+    float:left;
+    width:80px;
+    background: white;
+    margin-top:7px;
+    text-align: center;
+}
+.header .login .login-icon{
+    
+    width:30px;
+    text-align: center;
+    height:100%;
+    float:left;
+}
+.header .login .login-icon img{
+    width:100%;
+    margin-top:2px;
+}
+
+.bodygen{
+    background: darksalmon;
+    width:100%;
+    height:400px;
+    position: absolute;
+    left: 0;
+}
+
+.bodygen .description{
+    position:absolute;
+    z-index:2;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    height:150px;
+    background: rgb(234, 234, 234);
+    width:500px;
+    text-align: left;
+    margin-top:200px;
+    margin-left:85px;
+    
+}
+.bodygen .description .big-logo{
+    font-size:29px;
+    font-weight:800;
+    width:300px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.bodygen .description .small-logo{
+    font-size:15px;
+    font-weight:600;
+    line-height: 1.2;
+}
+.bodygen .description .six-men{
+    font-size:14px;
+    font-weight:800;
+    background: black;
+    color:white;
+    margin-top:20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    float:left; 
+    margin-right:30px;
+    border-radius: 4xp;
+    padding:10px 25px 10px 15px;
+}
+.bodygen .description .one-man{
+    font-size:14px;
+    font-weight:800;
+    color:black;
+    margin-top:20px;
+    box-sizing: border-box;
+    
+    float:left; 
+    padding:10px 15px;
+    
+}
+
+.bodygen .main-page img{
+    height:490px;
+    width:100%;
+}
+.footer{
+    width:100%;
+    height:500px;
+    position: absolute;
+    left:0;
+    top:520px;
+    padding-top:50px;
+    display:flex;
+    justify-content: space-between;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.footer .teams{
+    width:320px;
+    background: white;
+    float:left;
+    height:400px;
+}
+.footer .footer-description .foot-logo{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom: 5px;
+}
+.footer .footer-description .foot-descr{
+    font-size:14px;
+    font-weight:600;
+    line-height: 1.2;
+    /*letter-spacing: .5px;*/
+}
+.footer .footer-description .more{
+    font-size: 14px;
+    font-weight:700;
+	margin-top: 15px;
+}
+.footer .footer-description .more a{
+    color: rgb(0, 103, 187);
+    text-decoration: none;
+}
+   
+ .footer .footer-pic img{
+    width:320px;
+ }
+.footer .edge{
+    width:320px;
+    float:left;
+    height:400px;
+}
+.footer .onedrive{
+    width:320px;
+    /*box-sizing: border-box;*/
+    float:left;
+    height:400px;
+}
+.footer .win10{
+    width:320px;
+    float:left;
+    height:400px;
+}
