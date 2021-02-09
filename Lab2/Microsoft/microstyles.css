@@ -193,6 +193,7 @@ body{
     background: white;
     float:left;
     height:400px;
+    margin-left:20px;
 }
 .footer .footer-description .foot-logo{
     margin-top:20px;
@@ -234,4 +235,5 @@ body{
     width:320px;
     float:left;
     height:400px;
+    margin-right:20px;
 }
