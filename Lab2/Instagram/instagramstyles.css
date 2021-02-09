@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
+    background: rgb(250, 250, 250)
+}
+.main{
+    width:100%;
+    height:700px;
+    background: rgb(250, 250, 250);
+    font-family: 'Roboto', sans-serif;
+}
+.main .main-photo{
+    width:390px;
+    margin-left:285px;
+    padding-top:35px;
+    background: transparent;
+    float:left;
+    margin-right:20px;
+}
+.main .main-photo img{
+    width:100%;
+}
+.main .main-box{
+    width:350px;
+    height:600px;
+    background: transparent;
+    float:left;
+    
+}
+.main .main-box .insta-logo{
+    background: transparent;
+    display:flex;
+    justify-content: center;
+    /*padding:50px 50px 0 50px;*/
+    margin-top:30px;
+    
+}
+.main .main-box .insta-logo img{
+    width:180px;;
+}
+.main .main-box .login-box{
+    background: transparent;
+    height:200px;
+    /*margin-top:5px;*/
+    padding:39px;
+}
+
+.main .main-box .login-box .input-field{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.main .main-box .login-box .input{
+    width: 100%;
+	background: #fafafa;
+	border: 1px solid rgb(219, 219, 219);
+	font-size: 12px;
+	border-radius: 2px;
+	color: #262626;
+	padding: 10px;
+}
+.main .main-box .login-box .login-button{
+    margin: 10px 0;
+	background-color: #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+}
+.main .main-box .login-box .login-button a{
+    font-size:13px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.main .main-box .login-box .or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.main .main-box .login-box .or .line{
+	width: 105px;
+	height: 2px;
+	background: #efefef
+}
+
+.main .main-box .login-box .or p{
+	color: #999;
+	font-size: 13px;
+}
+
+.main .main-box .login-box .facebook-forgot .facebook{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main .main-box .login-box .facebook-forgot .facebook img{
+	width: 16px;
+	height: 16px;
+}
+
+.main .main-box .login-box .facebook-forgot .facebook p{
+	color: #385185;
+    font-weight: 600;
+    font-size:14px;
+	margin-left: 10px;
+}
+
+.main .main-box .login-box .facebook-forgot .forgot{
+	font-size: 11px;
+	text-align: center;
+    margin-top: 5px;
+    
+}
+
+.main .main-box .login-box .facebook-forgot .forgot a{
+    color: #003569;
+    text-decoration: none;
+}
+.main .main-box .upper-wrapper{
+    height:370px;
+    background: white;
+    border:1px solid;
+    margin-top:60px;
+    margin-bottom:10px;
+    border: 1px solid rgb(219, 219, 219);
+	border-radius: 2px;
+}
+.main .main-box .lower-wrapper{
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid rgb(219, 219, 219);
+	border-radius: 2px;
+}
+.main .main-box .lower-wrapper .register{
+	/*margin: 20px 0 20px;*/
+    padding: 10px 10px;
+    font-size:13px;
+	text-align: center;
+    color: #262626;
+    background: transparent;
+}
+
+.main .main-box .lower-wrapper .register a{
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main .main-box .download-app .download{
+    /*margin: 20px 0 20px;*/
+    margin-top:5px;
+    padding: 5px 10px;
+    font-size:14px;
+	text-align: center;
+    color: #262626;
+    background: transparent;
+}
+.main .main-box .download-app .download-icons{
+    box-sizing: border-box;
+    padding:0 26px 0 26px;
+    display:flex;
+    background: transparent;
+    justify-content: space-around;
+}
+.footer{
+    background: transparent;
+    height:100px;
+}
+.footer p{
+    color:rgb(142, 142, 142);
+    font-size:11px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer .first-row{
+    display:flex;
+    justify-content: space-around;
+    padding-left:300px;
+    padding-right:300px;
+    height:20px;
+}
+.footer .second-row{
+    display:flex;
+    justify-content: space-around;
+    padding-left:350px;
+    padding-right:350px;
+    height:20px;
+}
