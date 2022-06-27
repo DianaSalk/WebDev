@@ -1,102 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-    <style>
-    *{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .one{
-        background: rgb(34,34,34);
-        position: absolute;
-        left:0;
-        top:0;
-        width:100%;
-    }
- 
-    .one p{
-        margin-left:90px;
-        background: transparent;
-        font-size: 20px;
-        color:rgb(152, 152, 152);
-        
-    }
-    .two{
-        background: transparent;
-        margin-top:90px;
-        height:100px;
-    }
-    .two p{
-        background: transparent;
-        font-size: 40px;
-        width:400px;
-        margin-left: 320px;
-        display: inline-block;
-        color: rgb(34,34,34);
-    }
-    .three .new-task{
-        background: transparent;
-        width:650px;
-        padding:10px;
-        margin-left: 410px;
-        margin-right: 30px;
-        border-radius: 4px;
-        border:2px solid rgb(152, 152, 152);
-        font-size: 1.1em;
-    }
-    .three{
-        margin-top:10px;
-        height:70px;
-    }
-    #bttn{
-        width: 70px;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 4px;
-    border-color: rgb(38,92,136);
-    border: none;
-    background-color: rgb(51, 122, 183);
-    color: white;
-    }
-    .list{
-        background: transparent;
-    }
-    .list ul li{
-    border-radius: 4px;
-    text-decoration: none;
-    list-style-type: none;
-    cursor: pointer;
-    font-size: 15px;
-    padding: 30px;
-    position: relative;
-    border:1px solid rgb(152, 152, 152);
-    color:rgb(152, 152, 152);
-    width:700px;
-    margin-left:280px;
-
-    }
-    </style>
-</head>
-<body>
-   <div class='one'>
-
-        <p>ToDo List</p>
-
-   </div>
-   <div class='two'>
-        <p>ToDo List</p>
-   </div>
-   <div class='three'>
-       <input class="new-task" id="text" placeholder="New Task" size=50>
-       <button id="bttn">Add</button>
-   </div>
-   <div class="list">
-        <ul id="un-list">
-            <li class="item"><input type="checkbox" >Task 1</li>
-            <li class="item"><input type="checkbox">Task 2</li>
-            <li class="item"><input type="checkbox">Task 3</li>
-        </ul>	
-    </div>
-    <script src="test.js"></script>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>To Do List</title>
+        <link rel="shortcut icon", type="image/png", href="img/micrologo.png">
+        <style>
+            body{
+                margin: 0px;
+            }
+            .first{
+                background-color: #222222;
+                color: #a2a8ad;
+                padding:15px;
+                padding-left: 50px;
+            }
+            .main{
+                font-size: 30px;
+                font-weight: 500;
+                margin-top: 3%;
+                margin-left:22%;
+            }
+            #newitem{
+                padding: 11px 9px;
+                margin-left: 25%;
+                margin-right: auto;
+                margin-top: 1%;
+                display: inline;
+                width: 50%;
+                font-size: 14px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                border: 1px solid #dbdbdb;
+                font-weight: lighter;
+            }
+            #newitem:focus {
+                outline: #dbdbdb;
+                border: 1px solid #dbdbdb;
+            }
+            .btn{
+                margin-left: 20px;
+                border: 1px solid #dbdbdb;
+                border-radius: 5px;
+                padding: 11px 15px;
+                font-size: 14px;
+                background-color: #337ab7;
+                color:white;
+            }
+            ul{
+                list-style-type: none;
+                width: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul>li{
+                padding: 20px;
+                border: 1px solid #dbdbdb;
+                border-radius: 5px;
+            }
+            input:checked+span{
+                text-decoration: line-through;
+            }
+            ul>li>button{
+                background-color: white;
+                border: 0px solid #dbdbdb;
+                float: right;
+                height: 19px;
+                width: 17px;
+                background-image: url(img/trash.jpg);
+            }
+        </style>
+    </head>
+    <body>
+         <div class="first">ToDo List</div>
+         <div class="main">ToDo List</div>
+         <input type="text" class="input" name="newitem" id="newitem"  placeholder="New Task" autofocus="1">
+         <button class="btn" onclick="addBtn()">Add</button>
+         
+         <ul id="listtt">
+            
+         </ul>
+         <script>
+            function addBtn(){
+                var inputext = document.getElementById("newitem").value;
+                var btn = document.createElement("button");
+                var img = document.createElement("img");
+                var ul = document.getElementById("listtt");
+                var li = document.createElement("li");
+                var input = document.createElement("input");
+                var span = document.createElement("span");
+                span.innerHTML = inputext
+                document.getElementById("newitem").value = "";
+                input.setAttribute("type","checkbox");
+                btn.addEventListener('click', deleteBtn);
+                li.appendChild(input)
+                li.appendChild(span);
+                li.appendChild(btn);
+                li.setAttribute("class","listitem")
+                ul.appendChild(li);
+            }
+            function deleteBtn(){
+                this.parentNode.remove();
+            }
+         </script>
+    </body>
 </html>
